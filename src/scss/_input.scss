@@ -1,0 +1,18 @@
+.input{
+  &__phone{
+    width: 330px;
+    height: 30px;
+    &--text{
+      height: 150px;
+    }
+  }
+
+  &__tablet{
+    width: 400px;
+    height: 30px;
+
+    &__text{
+      height: 200px;
+    }
+  }
+}

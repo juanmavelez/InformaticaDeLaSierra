@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+    <figure>
+      <img [src]="imageUrl" alt="">
+    </figure>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{content}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button [routerLink]="[newUrl]"> Saber Más!</a>
+  </mat-card-actions>
+</mat-card>
