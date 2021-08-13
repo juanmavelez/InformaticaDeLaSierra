@@ -1,21 +1,22 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { ICard } from '@core/models/card.model';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
-  @Input() title: string;
-  @Input() imageUrl: string;
-  @Input() content: string;
-  @Input() newUrl: string;
+  @Input() card: ICard;
+  @Input() cardType: string;
 
   constructor() {
-    this.title = '';
-    this.imageUrl = '';
-    this.content = '';
-    this.newUrl = '';
+    this.cardType = 'normal';
+    this.card = {
+      title: '',
+      content: '',
+      newUrl: '',
+      imageUrl: '',
+    };
   }
 
   ngOnInit(): void {}

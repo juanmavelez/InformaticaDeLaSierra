@@ -1,14 +1,16 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>{{title}}</mat-card-title>
-    <figure>
-      <img [src]="imageUrl" alt="">
+<mat-card class="scroll">
+  <mat-card-header class="header">
+    <mat-card-title class="title">{{card.title}}</mat-card-title>
+    <figure class="image">
+      <img [src]="card.imageUrl" alt="">
     </figure>
   </mat-card-header>
-  <mat-card-content>
-    <p>{{content}}</p>
+  <mat-card-content class="content">
+    <p>{{card.content}}</p>
   </mat-card-content>
-  <mat-card-actions>
-    <a mat-button [routerLink]="[newUrl]"> Saber Más!</a>
+  <mat-card-actions class="footer">
+    <button mat-button class="button button__phone button--default">
+      <a [routerLink]="[card.newUrl]"> Saber Más!</a>
+    </button>
   </mat-card-actions>
 </mat-card>

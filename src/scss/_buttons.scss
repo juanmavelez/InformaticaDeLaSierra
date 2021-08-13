@@ -1,5 +1,6 @@
 .button{
   justify-content: center;
+  border-style: none;
   border-radius: 5px;
   text-align: center;
   color: $color3;
@@ -21,6 +22,6 @@
     background: $color1;
   }
   &--pushed{
-    background-color: $colo3;
+    background-color: $color3;
   }
 }
