@@ -1,20 +1,20 @@
-@import '/src/scss/variables';
+@import "/src/scss/variables";
 
-.scroll{
+.scroll {
   position: static;
   width: 300px;
   height: 350px;
   background: $color4;
   text-align: center;
 
-  .header{
-    margin:75px auto 25px auto;
+  .header {
+    margin: 65px auto 0 auto;
 
-    .title{
+    .title {
       text-align: center;
       justify-content: center;
     }
-    .image{
+    .image {
       position: absolute;
       z-index: 5;
       top: -50px;
@@ -22,13 +22,45 @@
       width: 100px;
       height: 100px;
       margin: 0;
-      img{
+      img {
         width: 100%;
       }
     }
   }
 
-  .content{
-    margin: 35px auto;
+  .content {
+    margin: 25px auto 0 auto;
+    text-align: center;
+  }
+  .footer{
+    margin-top: 35px;
+  }
+}
+
+.default {
+  width: 375px;
+  height: 350px;
+
+  .header {
+    margin: 15px auto 0 auto;
+    align-items: center;
+
+    .image {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content {
+    margin: 30px 25px 0 25px;
+    justify-content: center;
+  }
+  .footer{
+    display: grid;
+    margin-top: 45px;
+    justify-content: center;
   }
 }

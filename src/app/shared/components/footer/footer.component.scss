@@ -3,6 +3,34 @@
 footer{
   width: 100%;
   height: 500px;
+  padding: 25px;
   background-color: $color1;
   color: $color3;
+  .logo{
+    margin: 0;
+  }
+  .description{
+    width: 315px;
+    margin-top: 20px;
+  }
+  .menu{
+    display: grid;
+    gap:10px;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+  .whatsapp{
+    width: 60px;
+    img{
+      width: 100%;
+    }
+  }
+  .time{
+    margin-top: 45px;
+    width: 315px;
+  }
+
 }
