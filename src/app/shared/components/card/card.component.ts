@@ -10,8 +10,9 @@ export class CardComponent implements OnInit {
   @Input() cardType: string;
 
   constructor() {
-    this.cardType = 'normal';
+    this.cardType = 'default';
     this.card = {
+      name: '',
       title: '',
       content: '',
       newUrl: '',

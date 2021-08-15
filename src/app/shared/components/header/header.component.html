@@ -1,0 +1,18 @@
+<header class="header" (mouseleave)="showNav = false">
+  <figure class=" header__logo">
+    <img src="assets/logos/idsierra-ligth.png" alt="IdSierra Icon">
+  </figure>
+  <div>
+    <button class=" header__burger" (click)="click()">
+      <img src="assets/icons/burger.svg" alt="">
+    </button>
+    <nav *ngIf="showNav || width>600px" class="header__nav">
+      <ul>
+        <li>Home</li>
+        <li>Sobre Nosotros</li>
+        <li>Servicios</li>
+        <li>Concactanos</li>
+      </ul>
+    </nav>
+  </div>
+</header>
