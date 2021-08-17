@@ -1,0 +1,5 @@
+<button mat-raised-button
+  [ngClass]="{'button':true, 'button__phone': size==='phone', 'button__small': size==='small', 'button--yellow' : color==='yellow', 'button--blue': color==='blue' }"
+  [disabled]="disabled" type="{{type}}">
+  <a [routerLink]="url"> {{text}}</a>
+</button>

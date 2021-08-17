@@ -1,0 +1,27 @@
+@import "/src/scss/variables";
+
+form{
+  display: grid;
+  gap: 40px;
+  width: 100%;
+  max-width: 375px;
+  margin: 30px auto 50px auto;
+  justify-items: center;
+  justify-self: center;
+  background-color: white;
+
+  .text{
+    margin: 20px auto 30px auto;
+    width: 90%;
+    max-width: 350px;
+  }
+  .form-field{
+    display: block;
+    width: 335px;
+    height: 30px;
+  }
+
+  .button{
+    margin-top: 100px;
+  }
+}

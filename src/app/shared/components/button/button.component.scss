@@ -1,0 +1,36 @@
+@import "/src/scss/variables";
+
+.button {
+  text-transform: uppercase;
+
+  &:hover {
+    border: 3px solid $color4;
+    box-sizing: border-box;
+  }
+
+  &__small {
+    width: 135px;
+    height: 35px;
+  }
+  &__phone {
+    width: 270px;
+    height: 40px;
+  }
+  &__tablet {
+    width: 350px;
+    height: 45px;
+  }
+
+  &--blue {
+    background-color: $color1;
+    a {
+      color: $color3;
+    }
+  }
+  &--yellow {
+    background-color: $color4;
+    a {
+      color: $color1;
+    }
+  }
+}

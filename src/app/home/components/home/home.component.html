@@ -1,0 +1,55 @@
+<app-header></app-header>
+<app-title [title]="title" [images]="images"></app-title>
+<section class="section1">
+  <h2>Trabajamos con empersas y particulares</h2>
+  <div class="section1__grid">
+    <section>
+      <img src="assets/icons/enterprise.png" alt="imágen informal de una empresa">
+      <h3>Empresas</h3>
+      <div class="section1__grid--content">
+        <p>¿Esta buscando para la compañia que ofrezca el mejor sercio IT para su compañia? Le ofrecemos 30 años de
+          experiencia asesorando todo tipo de empresas, pymes y startups en rapido crecimiento.</p>
+        <app-button [url]="''" [color]="'yellow'" [size]="'small'" [type]="'button'" [text]="'Saber más!'"></app-button>
+      </div>
+    </section>
+    <section>
+      <img src="assets/icons/woman.png" alt="imágen de un individuo">
+      <h3>Particulares</h3>
+      <div class="section1__grid--content">
+        <p>¿Tiene problemas con su ordenador y busca un servicio de confianza?
+          Le ofrecemos 30 años de experiencia con mas de 100 casos de exito y garantías de satisfacción</p>
+        <app-button [url]="''" [color]="'yellow'" [size]="'small'" [type]="'button'" [text]="'Saber más!'"></app-button>
+      </div>
+    </section>
+  </div>
+</section>
+<section class="section2">
+  <h2>Nuestros Servicios</h2>
+  <ul>
+    <li *ngFor="let card of cards">
+      <app-card [card]="card"></app-card>
+    </li>
+  </ul>
+</section>
+<section class="section3">
+  <h2>¿Porqué nosotros?</h2>
+  <ul>
+    <li>+30 años en el sector</li>
+    <li>+1000 Clientes satisfechos</li>
+    <li>+30 Empresas confiían en nosotros</li>
+    <li>Recogida y entrega Gratuita</li>
+    <li>Presupuesto y Desplazamientos Gratuitos</li>
+  </ul>
+</section>
+<section class="section4">
+  <p>Increibles empresas que confían en nosotros</p>
+  <ul>
+    <li><img src="assets/logos/percentil.png" alt="logo de la empresa percentil"></li>
+    <li><img src="assets/logos/garna.png" alt="logo de la empresa garna"></li>
+    <li><img src="assets/logos/elguijo.png" alt="logo de la empresa elguijo"></li>
+    <li><img src="assets/logos/remax.png" alt="logo de la empresa remax"></li>
+    <li><img src="assets/logos/creative.png" alt="logo de la empresa creative"></li>
+  </ul>
+</section>
+<app-forms></app-forms>
+<app-footer></app-footer>

@@ -1,0 +1,10 @@
+<picture>
+  <source media="(min-width: 1000px)" [srcset]="images.desktop">
+  <source media="(min-width: 500px" [srcset]="images.tablet">
+  <img [src]="images.phone" alt="people negotiating at table">
+</picture>
+<div class="title">
+  <h1>{{title}}</h1>
+  <h2>con Informática de la Sierra</h2>
+  <app-button [text]="'Contactenos!'" [url]="''"></app-button>
+</div>

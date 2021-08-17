@@ -1,0 +1,27 @@
+<form [formGroup]="form" class="form" (ngSubmit)="sendForm($event)">
+  <p class="text">rellene el formulário para que nos pongamos en contacto con usted</p>
+
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Nombre" formControlName="name" type="text">
+  </mat-form-field>
+
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>Teléfono</mat-label>
+    <input matInput placeholder="Teléfono" formControlName="phone" type="tel">
+  </mat-form-field>
+
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>Correo electrónico</mat-label>
+    <input matInput placeholder="Correo electrónico" formControlName="email" type="email">
+  </mat-form-field>
+
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>¿Qué podemos hacer por usted?</mat-label>
+    <textarea matInput placeholder="¿Qué podemos hacer por usted?" formControlName="message" type="text"></textarea>
+  </mat-form-field>
+
+  <app-button class="button" [text]="'Saber Más!'" [type]="'submit'" [color]="'blue'" [disabled]="!form.valid"
+    [text]="'Enviar!'">
+  </app-button>
+</form>

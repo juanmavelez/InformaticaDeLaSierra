@@ -9,8 +9,6 @@
     <p>{{card.content}}</p>
   </mat-card-content>
   <mat-card-actions class="footer">
-    <button mat-button class="button button__phone button--default">
-      <a [routerLink]="[card.newUrl]"> Saber Más!</a>
-    </button>
+    <app-button [text]="'Saber Más!'" [size]="'phone'" [type]="'button'" [color]="'blue'"></app-button>
   </mat-card-actions>
 </mat-card>
