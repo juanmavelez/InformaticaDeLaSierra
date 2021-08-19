@@ -134,6 +134,7 @@
     }
     &__grid {
       grid-template-columns: 300px 300px;
+      gap: 100px;
       justify-content: center;
       img {
         width: 80px;
