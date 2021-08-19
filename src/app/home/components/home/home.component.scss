@@ -1,5 +1,7 @@
 @import "/src/scss/variables";
-
+:host{
+  overflow: hidden;
+}
 .section1 {
   margin: 110px auto 0 auto;
   padding-top: 35px;
@@ -13,7 +15,6 @@
   &__grid {
     display: grid;
     gap: 30px;
-    grid-template-columns: 1fr 1fr;
     margin-top: 45px;
     padding: 0 25px 55px 25px;
     text-align: center;
@@ -30,10 +31,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      p {
-        height: 20rem;
-        margin-bottom: 40px;
-      }
     }
   }
 }
@@ -48,7 +45,6 @@
   ul {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, 375px);
     margin-top: 25px;
     justify-content: center;
   }
@@ -83,6 +79,7 @@
       height: 30px;
       img {
         width: 100%;
+        object-fit: contain;
       }
     }
 
@@ -112,6 +109,24 @@
   }
 }
 
+@media (min-width: 375) {
+  .section1 {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+      &--content {
+        p {
+          height: 20rem;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+  .section2 {
+    ul {
+      grid-template-columns: repeat(auto-fit, 375px);
+    }
+  }
+}
 @media (min-width: $medium-screen-breakpoint) {
   .section1 {
     h2 {

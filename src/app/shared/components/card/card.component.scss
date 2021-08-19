@@ -38,7 +38,6 @@
 }
 
 .default {
-  width: 355px;
   height: 350px;
   margin: 0;
 
@@ -62,7 +61,6 @@
     }
   }
   .content {
-    width: 330px;
     height: 90px;
     margin: 30px auto 0 auto;
     justify-content: center;
@@ -71,6 +69,15 @@
     display: grid;
     margin-top: 45px;
     justify-content: center;
+  }
+}
+
+@media (min-width: 375px) {
+  .defaut {
+    width: 355px;
+    .content{
+      width: 330px;
+    }
   }
 }
 

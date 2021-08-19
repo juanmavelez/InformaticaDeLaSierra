@@ -17,11 +17,19 @@ form{
   }
   .form-field{
     display: block;
-    width: 335px;
+    width: 300px;
     height: 30px;
   }
 
   .button{
     margin-top: 100px;
+  }
+}
+
+@media (min-width:375px) {
+  form{
+    .form-field{
+      width: 335px;
+    }
   }
 }
