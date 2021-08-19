@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   images: IImages;
   cards: ICard[];
   constructor() {
-    this.title = 'Resuelva de sus problemas informáticos';
+    this.title = 'Resuelva sus problemas informáticos';
     this.images = {
       desktop: 'assets/images/home-desktop.jpeg',
       tablet: 'assets/images/home-tablet.jpeg',
