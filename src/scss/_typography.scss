@@ -1,32 +1,83 @@
 @use '~@angular/material' as mat;
+@import '/src/scss/variables';
 
-
-
- $custom-typography-conf: mat.define-typography-config(
-  $font-family:   'Nunito, sans-serif',
-  $display-4:     mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
-  $display-3:     mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
-  $display-2:     mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
-  $display-1:     mat.define-typography-level(34px, 40px, 400),
-  $headline:      mat.define-typography-level(
+$custom-typography: mat.define-typography-config(
+  $font-family: "Nunito, sans-serif",
+  $headline:
+    mat.define-typography-level(
       $font-size: 3.4rem,
-      $font-weight: 400,
+      $font-weight: 300,
       $line-height: 4.6rem,
       $letter-spacing: 0.0025em,
     ),
-  $title:         mat.define-typography-level(
-      $font-size: 2.0rem,
+  $title:
+    mat.define-typography-level(
+      $font-size: 2rem,
       $font-weight: 500,
       $line-height: 2.3rem,
       $letter-spacing: 0.1px,
-),
-  $subheading-2:  mat.define-typography-level(16px, 28px, 400),
-  $subheading-1:  mat.define-typography-level(15px, 24px, 400),
-  $body-2:        mat.define-typography-level(1.4rem, 2.4rem, 500),
-  $body-1:        mat.define-typography-level(1.4rem, 2.0rem, 400),
-  $caption:       mat.define-typography-level(12px, 20px, 400),
-  $button:        mat.define-typography-level(1.4rem, 1.9 rem, 500, $letter-spacing: 1.25px),
-  $input:         mat.define-typography-level(inherit, 1.125, 400)
- );
+    ),
+  $subheading-2:  mat.define-typography-level(1.6rem, 2.2rem, 300),
+  $subheading-1:  mat.define-typography-level(1.6rem, 2.2rem, 300),
+  $body-2: mat.define-typography-level(1.4rem, 2.4rem, 500),
+  $body-1: mat.define-typography-level(1.4rem, 2rem, 400),
+  $button:
+    mat.define-typography-level(1.4rem, 1.9 rem, 500, $letter-spacing: 1.25px),
+  $input: mat.define-typography-level(inherit, 1.125, 400),
+);
 
- @include mat.core($custom-typography-conf);
+$custom-typography-medium: mat.define-typography-config(
+  $font-family: "Nunito, sans-serif",
+  $headline:
+    mat.define-typography-level(
+      $font-size: 6rem,
+      $font-weight: 300,
+      $line-height: 8.2rem,
+      $letter-spacing: -0.05em,
+    ),
+
+  $title:
+    mat.define-typography-level(
+      $font-size: 3.4rem,
+      $font-weight: 500,
+      $line-height: 4.6rem,
+      $letter-spacing: 0.02px,
+    ),
+  $subheading-1:  mat.define-typography-level(2rem, 2.7rem, 300),
+  $body-2: mat.define-typography-level(1.6rem, 2.2rem, 500),
+  $body-1: mat.define-typography-level(1.6rem, 2.2rem, 400),
+);
+
+$custom-typography-large: mat.define-typography-config(
+  $font-family: "Nunito, sans-serif",
+  $headline:
+    mat.define-typography-level(
+      $font-size: 6rem,
+      $font-weight: 400,
+      $line-height: 8.2rem,
+      $letter-spacing: -0.05em,
+    ),
+
+  $title:
+    mat.define-typography-level(
+      $font-size: 4.8rem,
+      $font-weight: 200,
+      $line-height: 6.5rem,
+      $letter-spacing: 0.02px,
+    ),
+  $subheading-1:  mat.define-typography-level(3.4rem, 4.6rem, 200),
+  $subheading-2:  mat.define-typography-level(2.4rem, 3.3rem, 200),
+  $body-2: mat.define-typography-level(1.6rem, 2.2rem, 500),
+  $body-1: mat.define-typography-level(1.6rem, 2.2rem, 400),
+);
+
+
+@include mat.core($custom-typography);
+
+@media (min-width: $medium-screen-breakpoint){
+  @include mat.core($custom-typography-medium);
+}
+
+@media (min-width: $large-screen-breakpoint){
+  @include mat.core($custom-typography-large);
+}

@@ -1,10 +1,10 @@
 <mat-card [ngClass]="cardType">
-  <mat-card-header class="header">
-    <mat-card-title class="title">{{card.title}}</mat-card-title>
+  <header class="header">
+    <p class="title">{{card.title}}</p>
     <figure class="image">
       <img [src]="card.imageUrl" alt="">
     </figure>
-  </mat-card-header>
+  </header>
   <mat-card-content class="content">
     <p>{{card.content}}</p>
   </mat-card-content>

@@ -43,11 +43,40 @@
     height: calc(100% - 80px);
     padding: 20px 0 20px 20px;
     background-color: $color3;
-    color: $color2;
-
     li{
       display:block;
       margin: 40px;
+      a {
+        color: $color1;
+      }
+    }
+  }
+}
+
+@media (min-width: $medium-screen-breakpoint) {
+  .header{
+    &__nav{
+      position: static;
+      width: 50%;
+      height: auto;
+      padding: 0;
+      padding-right: 5vw;
+      justify-content: space-around;
+      background-color: $color1;
+      color: $color3;
+      ul{
+        display: flex;
+        justify-content: center;
+
+        li{
+          width: 100%;
+          margin: 0;
+          margin-left: 15%;
+          a{
+            color:$color3;
+          }
+        }
+      }
     }
   }
 }

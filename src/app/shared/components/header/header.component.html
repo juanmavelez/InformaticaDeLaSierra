@@ -3,16 +3,17 @@
     <img src="assets/logos/idsierra-ligth.png" alt="IdSierra Icon">
   </figure>
   <div>
-    <button class=" header__burger" (click)="click()">
+    <button *ngIf="width<600px" class="header__burger" (click)="click()">
       <img src="assets/icons/burger.svg" alt="">
     </button>
     <nav *ngIf="showNav || width>600px" class="header__nav">
+
       <ul>
-        <li>Home</li>
-        <li>Sobre Nosotros</li>
-        <li>Servicios</li>
-        <li>Concactanos</li>
+        <li><a>Home</a></li>
+        <li><a>Servicios</a></li>
+        <li><a>Concactanos</a></li>
       </ul>
     </nav>
   </div>
+
 </header>

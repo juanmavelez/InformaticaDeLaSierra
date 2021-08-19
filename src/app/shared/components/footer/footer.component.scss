@@ -1,7 +1,7 @@
 @import "src/scss/variables";
 
 footer{
-  height: 500px;
+  min-height: 500px;
   padding: 25px;
   background-color: $color1;
   color: $color3;
@@ -9,7 +9,7 @@ footer{
     margin: 0;
   }
   .description{
-    width: 315px;
+    width: 80%;
     margin-top: 20px;
   }
   .menu{

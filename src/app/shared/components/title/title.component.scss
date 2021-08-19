@@ -1,16 +1,46 @@
-.title{
-  display: grid;
-  margin-top: 35px;
-  text-align: center;
-  justify-items: center;
-  h1{
-    max-width: 80%;
-    margin-bottom: 40px;
+@import "/src/scss/variables";
+.title {
+  &__image {
+    width: 100%;
+    height: 36vh;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
-  h2{
-    margin-bottom: 25px;
+  &__text {
+    display: grid;
+    margin-top: 35px;
+    text-align: center;
+    justify-items: center;
+    h1 {
+      max-width: 80%;
+      margin-bottom: 40px;
+    }
+    h3 {
+      margin-bottom: 25px;
+    }
+    .buttom {
+      margin-bottom: 85px;
+    }
   }
-  .buttom{
-    margin-bottom: 85px;
+}
+@media (min-width: $large-screen-breakpoint) {
+  .title {
+    display: flex;
+    flex-direction: row-reverse;
+
+    &__image {
+      width: 50%;
+      height: 930px;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      margin: auto auto auto 100px;
+      justify-content: center;
+      text-align: left;
+    }
   }
 }
