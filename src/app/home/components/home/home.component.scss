@@ -134,7 +134,6 @@
     }
     &__grid {
       grid-template-columns: 300px 300px;
-      gap: 100px;
       justify-content: center;
       img {
         width: 80px;
@@ -226,6 +225,9 @@
     margin: 0;
     h2 {
       width: 50rem;
+    }
+    &__grid{
+      gap: 100px;
     }
   }
   .section2 {

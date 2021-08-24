@@ -9,6 +9,7 @@
     <p>{{card.content}}</p>
   </mat-card-content>
   <mat-card-actions class="footer">
-    <app-button [text]="'Saber Más!'" [size]="'phone'" [type]="'button'" [color]="'blue'"></app-button>
+    <app-button [url]="routingService.getRoute(card.newUrl)" [text]="'Saber Más!'" [size]="'phone'" [type]="'button'"
+      [color]="'blue'"></app-button>
   </mat-card-actions>
 </mat-card>

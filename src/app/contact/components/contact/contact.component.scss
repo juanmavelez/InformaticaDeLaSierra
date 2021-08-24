@@ -1,0 +1,44 @@
+@import "/src/scss/variables";
+main {
+  background-color: $color3;
+  picture {
+    img {
+      opacity: 70%;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  header {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 36vh;
+    object-fit: cover;
+  }
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 0 auto;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20%;
+      li {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    section {
+      display: grid;
+      margin-right: 20%;
+      justify-content: center;
+      img {
+        justify-self: center;
+        object-fit: contain;
+      }
+    }
+  }
+}

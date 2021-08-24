@@ -7,6 +7,18 @@ const routes: Routes = [
     loadChildren: () =>
       import('./home/home.module').then((module) => module.HomeModule),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./contact/contact.module').then((module) => module.ContactModule),
+  },
+  {
+    path: 'computer',
+    loadChildren: () =>
+      import('./computer/computer.module').then(
+        (module) => module.ComputerModule
+      ),
+  },
 ];
 
 @NgModule({

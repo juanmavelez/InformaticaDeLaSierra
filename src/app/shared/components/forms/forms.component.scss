@@ -4,8 +4,8 @@ form{
   display: grid;
   gap: 40px;
   width: 100%;
-  max-width: 375px;
-  margin: 30px auto 50px auto;
+  margin: 30px auto 0 auto;
+  padding-bottom: 50px;
   justify-items: center;
   justify-self: center;
   background-color: white;
@@ -17,7 +17,7 @@ form{
   }
   .form-field{
     display: block;
-    width: 300px;
+    width: 275px;
     height: 30px;
   }
 
@@ -28,6 +28,11 @@ form{
 
 @media (min-width:375px) {
   form{
+    .text{
+      margin: 20px auto 30px auto;
+      width: 90%;
+      max-width: 350px;
+    }
     .form-field{
       width: 335px;
     }

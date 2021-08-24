@@ -1,5 +1,6 @@
 @import "/src/scss/variables";
 .title {
+  background-color: $color3;
   &__image {
     width: 100%;
     height: 36vh;
@@ -30,9 +31,9 @@
   .title {
     display: flex;
     flex-direction: row-reverse;
-
     &__image {
       height: 930px;
+      width: 50vw;
     }
     &__text {
       display: flex;

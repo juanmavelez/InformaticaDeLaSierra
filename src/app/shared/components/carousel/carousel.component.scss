@@ -3,8 +3,21 @@
   width: 100%;
   overflow: scroll;
   padding-top: 55px;
-  padding-right: 20px;
   li{
-    margin-left: 20px;
+    margin-left: 15px;
+  }
+  li:nth-of-type(1){
+    margin-left: 10px;
+  }
+  li:nth-last-of-type(){
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 375px) {
+  .carousel{
+    li{
+      margin-left: 20px;
+    }
   }
 }

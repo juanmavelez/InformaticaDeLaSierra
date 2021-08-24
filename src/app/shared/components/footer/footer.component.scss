@@ -2,7 +2,9 @@
 
 footer{
   min-height: 500px;
-  padding: 25px;
+  padding-top:25px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   background-color: $color1;
   color: $color3;
   .logo{
@@ -28,7 +30,13 @@ footer{
   }
   .time{
     margin-top: 45px;
-    width: 315px;
+    width: 100%;
   }
+}
 
+@media (min-width: 375px){
+  footer{
+    padding: 25px;
+    padding-bottom: 25px;
+  }
 }

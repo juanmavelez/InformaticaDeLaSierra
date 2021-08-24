@@ -1,7 +1,7 @@
 @import "/src/scss/variables";
 
 .scroll {
-  width: 300px;
+  width: 275px;
   height: 350px;
   background: $color4;
   text-align: center;
@@ -10,6 +10,11 @@
     display: grid;
     margin: 65px auto 0 auto;
     min-height: 55px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    letter-spacing: 0.15px;
+
     .title {
       text-align: center;
       justify-content: center;
@@ -18,7 +23,7 @@
       position: absolute;
       z-index: 5;
       top: -50px;
-      left: 125px;
+      left: 100px;
       width: 100px;
       height: 100px;
       margin: 0;
@@ -29,11 +34,12 @@
   }
 
   .content {
+    height: 135px;
     margin: 25px auto 0 auto;
     text-align: center;
   }
   .footer {
-    margin-top: 35px;
+    margin-top: 15px;
   }
 }
 
@@ -73,9 +79,17 @@
 }
 
 @media (min-width: 375px) {
+  .scroll {
+    width: 300px;
+    .header {
+      .image {
+        left: 125px;
+      }
+    }
+  }
   .default {
     width: 355px;
-    .content{
+    .content {
       width: 330px;
     }
   }
@@ -87,13 +101,14 @@
     height: 500px;
     .header {
       grid-template-columns: 1fr 180px;
-      .title {
-        margin-left: 50px;
-      }
       margin-top: 25px;
       font-size: 2.4rem;
       font-weight: 400;
       line-height: 3.3rem;
+      .title {
+        margin-left: 50px;
+      }
+
       .image {
         width: 150px;
         height: 150px;

@@ -1,0 +1,40 @@
+<app-header></app-header>
+<app-title *ngIf="location; else home" [title]=" title + ' en ' + location" [images]="images "></app-title>
+<ng-template #home>
+  <app-title [title]="title" [images]="images"></app-title>
+</ng-template>
+<main>
+  <section class="section1">
+    <p>Si necesita una reparación de PC confiable en {{location}}, estamos a su servicio de una manera amigable y
+      técnicamente
+      competente. Estamos a su lado si tiene algún problema de hardware o software. Independientemente de si su
+      computadora
+      tiene problemas para arrancar o hace ruidos extraños al usarla, tenemos soluciones listas. Como parte de la
+      reparación
+      del ordenador, el servicio in situ lleva a cabo un extenso diagnóstico de errores. Informática de la Sierra hace
+      esto
+      para implementar rápidamente las mejoras necesarias.</p>
+  </section>
+  <section class="section2">
+    <h2>Ordenador como herrmienta de oficina</h2>
+    <p>Si la conexión a dispositivos como impresoras o servidores NAS se retrasa, puede haber defectos en el hardware
+      que hagan
+      necesario reparar la computadora. Con nuestro servicio in situ en {{location}} garantizamos el reemplazo con
+      piezas
+      individuales de alta calidad que estén en armonía con los requisitos de su computadora. Como parte de nuestras
+      reparaciones, seguimos un enfoque holístico en el que los componentes individuales se coordinan con precisión
+      entre
+      sí.</p>
+  </section>
+  <section class="section3">
+    <h2>Reparación de todos los equipos de fabricantes reconocidos.</h2>
+    <p>Nuestro competente equipo de Informática de la Sierra en {{location}}está a su lado con consejos y acciones.
+      Esperamos su
+      consulta sin compromiso para que nuestro servicio informático pueda encargarse de la reparación de su computadora
+      de
+      inmediato. Nos esforzamos por un procesamiento rápido de pedidos a su favor. De esta manera, puede recuperar
+      rápidamente la computadora en mejores condiciones para que pueda continuar sus actividades sin problemas y sin
+      problemas.</p>
+  </section>
+</main>
+<app-footer-extended></app-footer-extended>

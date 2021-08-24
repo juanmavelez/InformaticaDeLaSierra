@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { TitleComponent } from './components/title/title.component';
 import { ButtonComponent } from './components/button/button.component';
+import { FooterformComponent } from './components/footerform/footerform.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ButtonComponent } from './components/button/button.component';
     FormsComponent,
     TitleComponent,
     ButtonComponent,
+    FooterformComponent,
   ],
   imports: [CommonModule, RouterModule, MaterialModule, ReactiveFormsModule],
   exports: [
